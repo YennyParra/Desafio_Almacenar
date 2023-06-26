@@ -1,0 +1,24 @@
+<h1>Listado de Peliculas</h1>
+<br><br>
+<div class= "justify-content-center">
+<div class= "card col-6">
+<%= form_with model: @movies, method: :post do |form|%>
+<div class="mb-3">
+<%= form.label :name, "Movie Name", class: "form-label" %>
+<%= form.text_field :name, class: "form-control"%>
+</div>
+<div class="mb-4">
+<%= form.label :synopsis, "Movie Synopsis", class: "form-label" %>
+<%= form.text_field :synopsis, class: "form-control"%>
+</div>
+<div class="mb-4">
+<%= form.label :director, "Movie Director", class: "form-label" %>
+<%= form.text_field :director, class: "form-control"%>
+</div>
+</div>
+</div>
+<div class= "justify-content-center">
+<%= form.submit "Enviar", class: "btn btn-dark" %>
+</div>
+
+<%end%>

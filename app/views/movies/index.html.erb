@@ -1,0 +1,7 @@
+<h1>Listando todas las Movies</h1>
+
+<% @movies.each do |m| %>
+<p><%= m.name %> - <%= m.synopsis %> - <%= m.director%></p>
+
+<% end%>
+
